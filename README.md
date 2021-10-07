@@ -7,3 +7,5 @@
 ## 2. Initial cleaning up
 
 ## 3. Visualizations
+
+## Summary
