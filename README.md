@@ -8,7 +8,7 @@
 
 ## 3. Visualizations
 
-As the “age of Big Data” kicks into high-gear, visualization is an increasingly important tool to make sense of the trillions of rows of data generated every day. Data visualization helps to tell stories by curating data into a form that is easier to understand. A good visualization tells a story, removes the noise from data and highlighting the useful information. 
+In the modern era of BIG DATA, Data visualization plays an important role in extracting key insights from trillions of rows of data generated every day. Data visualization helps to tell stories by curating data into a form that is easier to understand. Below are two examples that clealy show how a good visualization helps to see the trend in data and the relationship between different features. 
 
 ### Scatter plot highlighting the trend in the number of covid cases in US
 ![alt text](https://github.com/askhan18/communication/blob/master/scatter_plot.png)
