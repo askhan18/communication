@@ -30,7 +30,7 @@ conda install pandas notebook
  ```
 The notebook can be opened by running the following code after navigating to the *.ipynb file. 
 ```
-jupter notebook
+jupyter notebook
 ```
 
 ## What is EDA?
