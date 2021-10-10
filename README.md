@@ -66,17 +66,33 @@ By using isnull().sum(), we could see how many rows in each column contains the 
 ```
 df.isnull().sum()
 ```
+![image](https://user-images.githubusercontent.com/86521753/136712469-7e169bfa-c050-49e9-a5e5-fb074faaf76a.png)
+
 Depending on different situations, we could fill out those missing values using zero, mean, median, or other specific values.
 ```
 df.fillna(0, inplace=True)
 ```
+![image](https://user-images.githubusercontent.com/86521753/136712473-44d3bf98-3f4e-45ad-8d5b-7719c62b98c7.png)
+
 Also, in some cases, negative values should be considered as invalid data. We could use python fuctions to find them out and change their values.
+
+![image](https://user-images.githubusercontent.com/86521753/136712482-df3c0bdf-2c93-477a-a096-9a1a98a2d0c0.png)
 
 Other data cleaning methods could be used depending on the situations. For example, scatter plot could be used to deal with outliers, etc.
 
 Data cleaning is a very critical step in EDA. In the reality, most of the data we obtained is very messy and might contain problematic data points. We could not do visualizations or apply the model to them easily. To data scientists, a structured and clean dataset would help a lot in future investigation steps.
 ## 3. Visualizations
 
-## 4. Results/Conclusion
+In the modern era of BIG DATA, Data visualization plays an important role in extracting key insights from trillions of rows of data generated every day. Data visualization helps to tell stories by curating data into a form that is easier to understand. Below are two examples that clealy show how a good visualization helps to see the trend in data and the relationship between different features. 
 
-## 5. Further Work(Optional)
+### Scatter plot highlighting the trend in the number of covid cases in US
+<img width=700 height=500 margin-left=300 margin-right= 300 alt="scatter_plot" src="https://github.com/askhan18/communication/blob/master/scatter_plot.png"></center>
+
+### Heatmap to show the correlation between different numeric features in the data
+<center><img width="500" height="500" alt="Heatmap" src="https://github.com/askhan18/communication/blob/master/Heatmap.png"></center>
+
+
+## 4. Results
+By using describing methods, we found out general statistics of the numerical data, the shape of the data, and what the values in our data looks like. At our cleaning step, we removed the missing values based on theory, changed some datatypes and were aware that we have dates, and made sure from previous descriptive statistic calculations that we did not have any glaring abnormalities or outliers. With the information about the dataset, and changing the date values from strings to dates, we were able to easily create a time series visualization to show a relationship between two variables, and a more complicated graph using a heatmap. 
+
+Each step contributed to one another, and ultimately contributed to our understanding of the data. 
