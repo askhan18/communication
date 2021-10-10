@@ -66,11 +66,17 @@ By using isnull().sum(), we could see how many rows in each column contains the 
 ```
 df.isnull().sum()
 ```
+![image](https://user-images.githubusercontent.com/86521753/136712469-7e169bfa-c050-49e9-a5e5-fb074faaf76a.png)
+
 Depending on different situations, we could fill out those missing values using zero, mean, median, or other specific values.
 ```
 df.fillna(0, inplace=True)
 ```
+![image](https://user-images.githubusercontent.com/86521753/136712473-44d3bf98-3f4e-45ad-8d5b-7719c62b98c7.png)
+
 Also, in some cases, negative values should be considered as invalid data. We could use python fuctions to find them out and change their values.
+
+![image](https://user-images.githubusercontent.com/86521753/136712482-df3c0bdf-2c93-477a-a096-9a1a98a2d0c0.png)
 
 Other data cleaning methods could be used depending on the situations. For example, scatter plot could be used to deal with outliers, etc.
 
