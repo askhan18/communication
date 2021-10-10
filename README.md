@@ -96,5 +96,3 @@ In the modern era of BIG DATA, Data visualization plays an important role in ext
 By using describing methods, we found out general statistics of the numerical data, the shape of the data, and what the values in our data looks like. At our cleaning step, we removed the missing values based on theory, changed some datatypes and were aware that we have dates, and made sure from previous descriptive statistic calculations that we did not have any glaring abnormalities or outliers. With the information about the dataset, and changing the date values from strings to dates, we were able to easily create a time series visualization to show a relationship between two variables, and a more complicated graph using a heatmap. 
 
 Each step contributed to one another, and ultimately contributed to our understanding of the data. 
-
-## 5. Further Work(Optional)
