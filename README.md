@@ -60,7 +60,21 @@ df.isnull().any()
 ```
 
 ## 2. Initial cleaning up
+After having an intial sniff of the data, we need to use python functions to clean up the messy data. We could detect abnormalies and outliers, fixing missing values, and ensure data integrity before further modeling.
 
+By using isnull().sum(), we could see how many rows in each column contains the missing value (NULL).
+```
+df.isnull().sum()
+```
+Depending on different situations, we could fill out those missing values using zero, mean, median, or other specific values.
+```
+df.fillna(0, inplace=True)
+```
+Also, in some cases, negative values should be considered as invalid data. We could use python fuctions to find them out and change their values.
+
+Other data cleaning methods could be used depending on the situations. For example, scatter plot could be used to deal with outliers, etc.
+
+Data cleaning is a very critical step in EDA. In the reality, most of the data we obtained is very messy and might contain problematic data points. We could not do visualizations or apply the model to them easily. To data scientists, a structured and clean dataset would help a lot in future investigation steps.
 ## 3. Visualizations
 
 ## 4. Results/Conclusion
