@@ -44,23 +44,43 @@ When given a dataset, we need to know some basic information of this dataset, in
 ```
 df.info()
 ```
+<img width="501" alt="Screen Shot 2021-10-10 at 2 29 57 PM" src="https://user-images.githubusercontent.com/87035350/136713585-7a4f47ff-0608-4282-804c-dc409b9f0cdc.png">
+
 ```
 df.describe()
 ```
+<img width="684" alt="Screen Shot 2021-10-10 at 2 30 39 PM" src="https://user-images.githubusercontent.com/87035350/136713600-a77e4ce0-7a34-4467-a263-09e4d6a29228.png">
+
 ```
 df.shape
 ```
+<img width="130" alt="Screen Shot 2021-10-10 at 2 30 23 PM" src="https://user-images.githubusercontent.com/87035350/136713596-dcff4a92-f7a5-485e-afaf-e2efac8511c7.png">
+
 ```
 df.head(2)
 ```
+<img width="757" alt="Screen Shot 2021-10-10 at 2 30 51 PM" src="https://user-images.githubusercontent.com/87035350/136713606-bee9816f-d7a1-4c8e-8124-80a3fc411999.png">
+
+```
+df.head(2).T
+```
+<img width="327" alt="Screen Shot 2021-10-10 at 2 31 08 PM" src="https://user-images.githubusercontent.com/87035350/136713617-99ece31f-f19d-46ea-a08a-d4fbcb7acf8e.png">
+
 
 ### Any missing values? 
 ```
 df.isnull().any()
 ```
+<img width="284" alt="Screen Shot 2021-10-10 at 2 31 19 PM" src="https://user-images.githubusercontent.com/87035350/136713611-e70a1919-82fe-49e3-afd0-290592a68241.png">
+
 
 ## 2. Initial cleaning up
 After having an intial sniff of the data, we need to use python functions to clean up the messy data. We could detect abnormalies and outliers, fixing missing values, and ensure data integrity before further modeling.
+
+```
+df['date'] = pd.to_datetime(df['date'])
+```
+<img width="471" alt="Screen Shot 2021-10-10 at 2 34 24 PM" src="https://user-images.githubusercontent.com/87035350/136713645-06c9a50e-6cc3-45d1-8fd0-75f728c40d41.png">
 
 By using isnull().sum(), we could see how many rows in each column contains the missing value (NULL).
 ```
