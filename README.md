@@ -33,9 +33,31 @@ The notebook can be opened by running the following code after navigating to the
 jupyter notebook
 ```
 
-## What is EDA?
+# What is EDA?
+"Exploratory Data Analysis refers to the critical process of performing initial investigations on data so as to discover patterns,to spot anomalies,to test hypothesis and to check assumptions with the help of summary statistics and graphical representations." — Prasad Patil 
 
 ## 1. Get an initial sniff of the data
+
+When given a dataset, we need to know some basic information of this dataset, including shape, columns information and type, missing values. We will use some functions from pandas to explore these features.
+
+### How big is this data and what are the column names and their datatypes?
+```
+df.info()
+```
+```
+df.describe()
+```
+```
+df.shape
+```
+```
+df.head(2)
+```
+
+### Any missing values? 
+```
+df.isnull().any()
+```
 
 ## 2. Initial cleaning up
 
