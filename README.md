@@ -109,7 +109,7 @@ In the modern era of BIG DATA, Data visualization plays an important role in ext
 <img width=700 height=500 margin-left=300 margin-right= 300 alt="scatter_plot" src="https://github.com/askhan18/communication/blob/master/scatter_plot.png"></center>
 
 ### Heatmap to show the correlation between different numeric features in the data
-<center><img width="500" height="500" alt="Heatmap" src="https://github.com/askhan18/communication/blob/master/Heatmap.png"></center>
+<center><img width=700 height="500" alt="Heatmap" src="https://github.com/askhan18/communication/blob/master/Heatmap.png"></center>
 
 
 ## 4. Results
